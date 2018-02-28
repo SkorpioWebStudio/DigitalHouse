@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-image: url("../images/bg-body.png");
+  font-family: sans-serif;
+}
+
+.container {
+}
+section {
+  margin-top:20px;
+}
+.logo {
+  display:block;
+  margin: 0 auto;
+  border-radius:50%;
+  border:2px;
+}
+.main-nav {
+  margin-top:20px;
+}
+.main-nav ul li {
+  list-style: none;
+  width:100%;
+  text-align: center;
+  background-color: black;
+  margin-top: 1px;
+  padding:10px;
+}
+.main-nav ul li a, .main-footer ul li a{
+  color: white;
+  text-transform: uppercase;
+}
+.main-nav ul li a:visited, .main-footer ul li a:visited  {
+  color: white;
+}
+
+
+.banner {
+  display: none;
+}
+.product {
+  margin-top:30px;
+}
+
+.product img{
+  width:100%;
+}
+
+.product h2{
+  font-weight: bold;
+  font-size:1.5em;
+  margin-top:20px;
+  display: inline-block;
+  padding:10px 0px;
+}
+.product p {
+  text-align:justify;
+  margin-top:20px;
+}
+
+.product a {
+  margin-top:20px;
+  display:block;
+}
+.main-footer {
+  margin-top:20px;
+}
+.main-footer ul li {
+  list-style: none;
+  width:100%;
+  text-align: center;
+  background-color: red;
+  margin-top: 1px;
+  padding:10px;
+}
+
+@media (min-width:768px) {
+  .main-nav {
+    overflow: hidden;
+  }
+  .main-nav ul li {
+    width: 15%;
+    margin-right:2%;
+    display:block;
+    float:left;
+
+  }
+  .main-nav ul li:last-child {
+     margin-right:0px;
+  }
+
+  .banner{
+    display:block;
+    margin-top:20px;
+  }
+  .banner img {
+    width:100%;
+  }
+  .vip-products {
+    overflow: hidden;
+  }
+  .product {
+    display:inline-block;
+    width:48%;
+    margin: 1%;
+    float:left;
+  }
+
+}
+@media (min-width:960px) {
+  .product {
+    display:inline-block;
+    width:31%;
+    margin: 1%;
+    float:left;
+  }
+  .main-footer {
+    overflow: hidden;
+    background-color:red;
+  }
+  .main-footer ul li {
+    width: auto;
+    margin-right:1px;
+    display:inline-block;
+
+  }
+  .main-footer ul li:last-child {
+     margin-right:0px;
+  }
+
+}

@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-image: url('../images/bg-2.png');
+}
+
+header {
+  overflow:hidden;
+  width:963px;
+  position: fixed;
+  top:0px;
+  z-index: 2;
+
+}
+
+.menu {
+  list-style: none;
+  background-color: #f45342;
+  margin: 30px;
+}
+
+.logo {
+  float: left;
+}
+
+.menu li {
+  display: inline-block;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin:20px;
+}
+.container {
+  width:963px;
+  margin-top:100px;
+}
+
+.prod {
+  width:300px;
+  margin:9px;
+  height:170px;
+  display:inline-block;
+  box-sizing: border-box;
+  position:relative;
+}
+.prod1 {
+  background-image: url('../images/img-phone-01.jpg');
+}
+.prod2 {
+  background-image: url('../images/img-phone-02.jpg');
+}
+.prod3 {
+  background-image: url('../images/img-phone-03.jpg');
+}
+
+.linea {
+  overflow:hidden;
+  margin:0px;
+
+}
+.promo {
+  display:block;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:0;
+  right:10px;
+}
+
+.promo_new {
+  background-image: url('../images/img-nuevo.png');
+}
+.promo_off {
+  background-image: url('../images/img-descuento.png');
+}
+.promo_free {
+  background-image: url('../images/img-gratis.png');
+}
+.nombre_prod{
+  width:100%;
+  margin-top: 70px ;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.boton {
+  margin-top: 20px ;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding:10px;
+  width:100px;
+  position:absolute;
+  left:100px;
+  bottom:15px;
+
+}
