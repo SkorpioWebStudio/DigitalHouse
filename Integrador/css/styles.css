@@ -1,0 +1,208 @@
+/*#ocre
+#FDF2CE
+#FBE498
+#F8CD3F
+#D4A408
+celeste
+#BBE0F6
+#8AC9F0
+#38A3E5
+#156CA2
+verde
+#C0F7C1
+#78ED7A
+#1DE221
+#128714
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+a:active, a:visited, a:hover, a:link {
+    color: dimgray;
+}
+body { font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {background-image: url("../images/header_bg_xs.gif");
+    width:100%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo {
+    float: left;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: black;
+}
+
+.marca {
+    float: left;
+    font-family: 'Condiment', cursive;
+    font-size: 4em;
+}
+.login {
+    text-align: center;
+    overflow:hidden;
+}
+.login img {
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: black;
+}
+
+nav { 
+    display: block;
+    background-color: #FBE498;
+}
+
+nav ul li {
+    padding: 5px;
+    width:100%;
+    text-align:center;
+    border-top-color: #D4A408;
+    border-top-width:3px;
+    border-top-style: solid;    
+}
+.buscador {
+    text-align:center;
+    vertical-align: top;
+    padding-top: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buscar_texto {
+    font-size: 20px;
+    float: center;
+}
+
+.categorias_lista {
+    background-color: #FDF2CE;
+    margin-top:15px;
+    float:left;
+    width:100%;
+    display: none;
+}
+.categorias_lista h2 {
+    font-weight: bold;
+    color: #128714;
+    padding: 10px;
+}
+
+.categorias_lista ul li {
+    padding: 10px;
+    width:100%;
+    text-align:left;
+    border-top-color: black;
+    border-top-width:1px;
+    border-top-style: solid;
+    margin-left: 50px;    
+}
+
+.categorias_cajas {
+    clear: both;
+    margin-top:15px;
+}
+
+.categoria {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.categoria_nombre{
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    top: 225px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    z-index:10;
+}
+.categoria_n1{
+    background-color: #8AC9F0;
+    color: #FFFFFF;
+}
+.categoria_n2{
+    background-color: #1DE221;
+    color: #FFFFFF;
+}
+.categoria_n3{
+    background-color: #D4A408;
+    color: #FFFFFF;
+}
+.categoria_n4{
+    background-color: #128714;
+    color: #FFFFFF;
+}
+.categoria_n5{
+    background-color: #156CA2;
+    color: #FFFFFF;
+}
+.categoria_img {
+    position: relative;
+    top:0;
+    z-index: 0;
+}

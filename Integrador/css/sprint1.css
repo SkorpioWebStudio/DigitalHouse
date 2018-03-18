@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+html,body{
+  margin:0;
+  padding:0;
+  border:0;
+  overflow: hidden;
+  font-size: 20.8px;
+  background-color: white;
+}
+
+input:focus{
+   background-color:#e6ffff;
+}
+textarea{
+  resize: vertical;
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+label input {
+  font-size: 10px;
+}
+
+.container{
+  width: 100%;
+  font-weight:lighter;
+}
+.caja{
+  border: 1px solid black;
+}
+.caja1{
+  position: relative;
+  top: 50;
+  left:250;
+  background-color: lightblue;
+  width:600px;
+  height: 500px;
+}
