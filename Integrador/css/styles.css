@@ -71,7 +71,22 @@ a {
 a:active, a:visited, a:hover, a:link {
     color: dimgray;
 }
-body { font-family: Verdana, Geneva, Tahoma, sans-serif;
+*{
+    box-sizing: border-box;
+  }
+  
+body { font-family: Poppins, Arial, Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    width:100%;
+    background-color: #78ED7A;
+    text-align:center;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.6;
+}
+input[type="text"],input[type="email"],input[type="number"],textarea {
+    width: 250px;
 }
 header {background-image: url("../images/header_bg_xs.gif");
     width:100%;
@@ -107,10 +122,15 @@ header {background-image: url("../images/header_bg_xs.gif");
     border-width: 5px;
     border-color: black;
 }
+.login a {
+    font-size: .7em;
+    color:black;
+}
 
 nav { 
     display: block;
     background-color: #FBE498;
+    overflow: hidden;
 }
 
 nav ul li {
@@ -120,6 +140,12 @@ nav ul li {
     border-top-color: #D4A408;
     border-top-width:3px;
     border-top-style: solid;    
+}
+.promociones {
+    margin-top: 15px;
+}
+.promo_img {
+    width: 100%;
 }
 .buscador {
     text-align:center;
@@ -135,7 +161,13 @@ nav ul li {
     font-size: 20px;
     float: center;
 }
-
+.categorias {
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
 .categorias_lista {
     background-color: #FDF2CE;
     margin-top:15px;
@@ -151,12 +183,12 @@ nav ul li {
 
 .categorias_lista ul li {
     padding: 10px;
-    width:100%;
+    width:75%;
     text-align:left;
     border-top-color: black;
     border-top-width:1px;
     border-top-style: solid;
-    margin-left: 50px;    
+    margin-left: 20px;    
 }
 
 .categorias_cajas {
@@ -169,6 +201,7 @@ nav ul li {
     position: relative;
     overflow: hidden;
     float: left;
+    text-align: center;
 }
 
 .categoria_nombre{
@@ -202,7 +235,162 @@ nav ul li {
     color: #FFFFFF;
 }
 .categoria_img {
-    position: relative;
-    top:0;
+    //position: relative;
+    //top:0;
     z-index: 0;
+}
+footer {
+    clear: both;
+    background-color: #8AC9F0;
+}
+
+footer ul li{
+    padding: 5px;
+    width:100%;
+    text-align:center;
+    border-top-color: #D4A408;
+    border-top-width:3px;
+    border-top-style: solid;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.caja_formulario {
+    padding: 5%;
+    width: 100%;
+}
+
+.registro_talle {
+    float: left;
+    width: 50%;
+}
+
+.talles {
+    float:left;
+    width: 100%;
+    padding: 5%;
+}
+.botones {
+    float: left;
+    text-align: center;
+    width:100%;
+    padding:5%;
+}
+
+@media (min-width: 426px){
+    header {background-image: url("../images/header_bg_ms.gif");
+    }
+    
+    nav { 
+        display: block;
+        border-top-color: #D4A408;
+        border-top-width:3px;
+        border-top-style: solid;    
+    }
+    
+    nav ul li {
+        padding: 5px;
+        width:23%;
+        border-top:none;
+        border-left-color: #D4A408;
+        border-left-width:3px;
+        border-left-style: solid;
+        float:left;
+    }
+
+    nav ul li:first-child {
+        border-left: none;
+    }
+    .promociones {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .promociones img {
+        width:800px;
+        height:428px;
+        box-sizing:border-box;
+        padding-left: 800px;
+        background: url("../images/promo_1_xl.jpg") left top no-repeat;;
+    }
+    .promo_img {
+        width: 90%;
+    }
+    .categorias_lista {
+        background-color: #FDF2CE;
+        margin-top:15px;
+        float:left;
+        width:25%;
+        display: inline-block;
+    }
+    .categorias_lista h2 {
+        font-weight: bold;
+        color: #128714;
+        padding: 10px;
+    }
+    
+    .categorias_lista ul li {
+        width:75%;
+        margin-left:10%;
+    }
+  
+    .categorias_cajas {
+        clear: both;
+        width: 75%;
+        float: right;
+    }
+    
+    .categoria {
+        width: 45%;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        text-align: center;
+        padding: 0 2%;
+    }
+    
+    footer {
+        clear: both;
+        background-color: #8AC9F0;
+        border-top-color: #D4A408;
+        border-top-width:3px;
+        border-top-style: solid;
+        overflow: hidden;
+        }
+    
+    footer ul li{
+        padding: 5px;
+        width: 30%;
+        text-align:center;
+        border-top: none;
+        border-left-color: #D4A408;
+        border-left-width:3px;
+        border-left-style: solid;
+        float:left;
+        
+    }
+    footer ul li:first-child{
+        border-left: none;
+    }   
+
+    .caja_formulario {
+        padding: 5%;
+        width: 50%;
+    }
+}
+
+@media (min-width:769px){
+    body {
+        width:90%;
+        //text-align: center;
+        margin: 0 auto;
+    }
+    header {
+        background-image: url("../images/header_bg_xl.gif");
+        height:200px;
+    }
+
 }

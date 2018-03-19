@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sahara - Indumentaria para hombres</title>
+        <link href="https://fonts.googleapis.com/css?family=Condiment" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logotipo">
+                <div class="logo"><img src="images/logo_img_xs.png"></div>
+                <div class="marca">Sahara</div>
+            </div>
+            <div class="login">
+                <img src="images/home.gif">
+                <a href="index.html"><p>Inicio</p></a>
+            </div>
+        </header>
+        <h1>Registración</h1>
+        <div class="container">
+            <div class="caja_formulario caja_login">
+                <form name="form_registro" action="registrar.php" method="POST">
+                <label>Nombre:</label>
+                <br>
+                <input type="text" name="nombre" required>
+                <br></br>
+                <label>Apellido:</label>
+                <br>
+                <input type="text" name="apellido" required>
+                <br></br>
+                <label>Usuario:</label>
+                <br>
+                <input type="text" name="usuario" required>
+                <br></br>
+                <label>Contraseña:</label>
+                <br>
+                <input type="password" name="password" required>
+                <br></br>
+                <label>Confirme contraseña:</label>
+                <br>
+                <input type="password" name="passwordc" required>
+                <br></br>
+                <label>E-mail:</label>
+                <br>
+                <input type="email" name="correo" required>
+                <br></br>
+                <label>Teléfono:</label>
+                <br>
+                <input type="number" name="telefono" required>
+                <br></br>
+                <label>Celular:</label>
+                <br>
+                <input type="number" name="celular" required>
+                <br></br>
+                <label>Domicilio:</label>
+                <br>
+                <textarea name="domicilio"></textarea>
+                <br></br>
+                <div class="talles">
+                    <label>Tallas Camisa:</label>
+                    <br>
+                    <div class="registro_talle"><input type="radio" name="tallacamisa"><label>XXS - Extra Small</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallacamisa"><label>XS - Extra Small</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallacamisa"><label>M - Medium</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallacamisa"><label>L - Large</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallacamisa"><label>XL - Extra Large</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallacamisa"><label>XXL - Extra Large</label></div>
+                    <br></br>
+                </div>
+                <div class="talles">
+                    <label>Tallas Pantalón:</label><br>
+                    <div class="registro_talle"><input type="radio" name="tallapant"><label>28-29</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallapant"><label>30-31</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallapant"><label>32-33</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallapant"><label>34</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallapant"><label>36</label></div>
+                    <div class="registro_talle"><input type="radio" name="tallapant"><label>38</label></div>
+                </div>
+                <br></br>
+                <div class="botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        <footer>
+            <ul>
+                <li>Dirección</li>
+                <li>Teléfono</li>
+                <li><img src="images/icono_facebook.gif">
+                    <img src="images/icono_tumblr.gif">
+                    <img src="images/icono_twitter.gif">
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
