@@ -84,6 +84,7 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     line-height: 1.6;
+    color: grey;
 }
 input[type="text"],input[type="email"],input[type="number"],textarea {
     width: 250px;
@@ -234,11 +235,6 @@ nav ul li {
     background-color: #156CA2;
     color: #FFFFFF;
 }
-.categoria_img {
-    //position: relative;
-    //top:0;
-    z-index: 0;
-}
 footer {
     clear: both;
     background-color: #8AC9F0;
@@ -280,6 +276,33 @@ footer ul li{
     width:100%;
     padding:5%;
 }
+
+.preguntas_lista {
+    margin-top:15px;
+    float:left;
+    width:100%;
+}
+.preguntas_lista h3 {
+    font-weight: bold;;
+    padding: 10px;
+    color: dimgray;
+    font-size: 1.2em;
+}
+
+.preguntas_lista ul li {
+    padding: 10px;
+    width:90%;
+    text-align:left;
+    border-top-color: black;
+    border-top-width:1px;
+    border-top-style: solid;
+    margin-left: 20px;
+}
+
+.preguntas_lista ul li p {
+    display: none;
+}
+
 
 @media (min-width: 426px){
     header {background-image: url("../images/header_bg_ms.gif");
@@ -380,6 +403,10 @@ footer ul li{
         padding: 5%;
         width: 50%;
     }
+    .preguntas_lista ul li:nth-child(3n) p {
+        display: inline;
+    }
+    
 }
 
 @media (min-width:769px){
